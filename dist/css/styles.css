@@ -3036,22 +3036,22 @@ textarea.form-control-lg {
 }
 .btn-primary:hover {
   color: #fff;
-  background-color: #00008b;
-  border-color: #00008b;
+  background-color: #00008b !important;
+  border-color: #00008b !important;
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
   color: #fff;
-  background-color: #00008b;
-  border-color: #00008b;
-  box-shadow: 0 0 0 0.25rem #00008b;
+  background-color: #00008b !important;
+  border-color: #00008b !important;
+  box-shadow: 0 0 0 0.25rem #00008b !important;
 }
 .btn-check:checked + .btn-primary, .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active, .show > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #00008b;
-  border-color: #00008b;
+  background-color: #00008b !important;
+  border-color: #00008b !important;
 }
 .btn-check:checked + .btn-primary:focus, .btn-check:active + .btn-primary:focus, .btn-primary:active:focus, .btn-primary.active:focus, .show > .btn-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.25rem #00008b;
+  box-shadow: 0 0 0 0.25rem #00008b !important;
 }
 .btn-primary:disabled, .btn-primary.disabled {
   color: #fff;

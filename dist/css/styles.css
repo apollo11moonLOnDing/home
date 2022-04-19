@@ -3030,7 +3030,7 @@ textarea.form-control-lg {
 }
 
 .btn-primary {
-  color: #00008b;
+  color: #fff;
   background-color: #00008b;
   border-color: #00008b;
 }
@@ -3040,13 +3040,13 @@ textarea.form-control-lg {
   border-color: #00008b;
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
-  color: #00008b;
+  color: #fff;
   background-color: #00008b;
   border-color: #00008b;
   box-shadow: 0 0 0 0.25rem #00008b;
 }
 .btn-check:checked + .btn-primary, .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active, .show > .btn-primary.dropdown-toggle {
-  color: #00008b;
+  color: #fff;
   background-color: #00008b;
   border-color: #00008b;
 }
@@ -3054,7 +3054,7 @@ textarea.form-control-lg {
   box-shadow: 0 0 0 0.25rem #00008b;
 }
 .btn-primary:disabled, .btn-primary.disabled {
-  color: #00008b;
+  color: #fff;
   background-color: #00008b;
   border-color: #00008b;
 }

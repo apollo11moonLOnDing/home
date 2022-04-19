@@ -3471,14 +3471,14 @@ textarea.form-control-lg {
 
 .btn-link {
   font-weight: 400;
-  color: #1abc9c;
+  color: #00008b;
   text-decoration: underline;
 }
 .btn-link:hover {
-  color: #15967d;
+  color: #00008b;
 }
 .btn-link:disabled, .btn-link.disabled {
-  color: #6c757d;
+  color: #00008b;
 }
 
 .btn-lg, .btn-group-lg > .btn {

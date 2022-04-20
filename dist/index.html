@@ -300,26 +300,26 @@
                     </ul>
                     <p style="font-size: 16px">The metadata standards that we chose to align are therefore: Dublin Core, XML metadata format, DACS, EAD, Marc21, MODS, CIDOC-CRM, Schema, and LCDRG</p><br>
                     
-                    <ul class="nav nav-tabs nav-justified">
+                    <div class="container bcontent">
+                    <ul class="nav nav-tabs">
                         <li class="nav-item">
-            			    <a class="nav-link active show" data-toggle="tab" href="#tab-1" style="background-color: #00008b; font-color:#ffffff">Who</a>
+            			    <a class="nav-link active" data-toggle="tab" href="#who">Who</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#tab-2" style="background-color: #00008b; font-color:#ffffff">Where</a>
+                            <a class="nav-link" data-toggle="tab" href="#where">Where</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#tab-3" style="background-color: #00008b; font-color:#ffffff">When</a>
+                            <a class="nav-link" data-toggle="tab" href="#when">When</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link"  data-toggle="tab" href="#tab-4" style="background-color: #00008b; font-color:#ffffff">What</a>
+                            <a class="nav-link"  data-toggle="tab" href="#what">What</a>
                         </li>
                     </ul>
                     
                     <!-- Who table -->
                     <div class="tab-content">
-			        <div class="tab-pane show active" id="tab-1">
-				    <div class="row justify-content-md-center">
-					    <table class="table-dark table-bordered" style="border-color:#ffffff; font-color:#ffffff">
+			        <div class="tab-pane fade show active" id="who">
+				   	    <table class="table-dark table-bordered" style="border-color:#ffffff; font-color:#ffffff">
 						    <thead style="background-color:#00008b; font-color:#ffffff">
 							    <tr>
 								    <th>Property</th>
@@ -434,13 +434,11 @@
 							</tbody>
 					     </table>                 
                       </div>
-			       </div>
-               
+			                      
                     
                       <!-- Where table -->
-                      <div class="tab-pane" id="tab-2">
-				      <div class="row justify-content-md-center">
-					  <table class="table-dark table-bordered" style="border-color:#ffffff; font-color:#ffffff">
+                      <div class="tab-pane fade" id="when">
+				      <table class="table-dark table-bordered" style="border-color:#ffffff; font-color:#ffffff">
 						    <thead style="background-color:#00008b; font-color:#ffffff">
 							    <tr>
 								    <th>Property</th>
@@ -495,7 +493,82 @@
                         	</tbody>
 					     </table>                 
                       </div>
-			    
+                     
+                      <!-- Where table -->
+                      <div class="tab-pane fade" id="where">
+				      <table class="table-dark table-bordered" style="border-color:#ffffff; font-color:#ffffff">
+			                <thead style="background-color:#00008b; font-color:#ffffff">
+							    <tr>
+								    <th>Property</th>
+								    <th>DC/DCterms</th>
+								    <th>XML Metadata Format</th>
+								    <th>DACS</th>
+								    <th>EAD</th>
+								    <th>Marc21</th>
+								    <th>MODS</th>
+								    <th>CIDOC-CRM</th>
+								    <th>Schema</th>
+                                    <th>LCDRG</th>
+							    </tr>
+							</thead>
+							<tbody>
+							    <tr>
+									<td>Has place (current location)</td>
+									<td>dc:coverage</td>
+									<td>/</td>
+									<td>6.1 Existence and Location of Originals</td>
+									<td>&lt;did&gt; / &lt;physloc&gt; </td>
+									<td>/</td>
+									<td>&lt;location&gt; / &lt;physicalLocation&gt;</td>
+									<td>crm:P55_has_current_location</td>
+									<td>schema:location</td>
+                                    <td>Copy Status (Location Facility)</td>
+								</tr>
+                           
+                          </tbody>
+                          </table>
+                        </div>
+                          
+                          
+                          
+                      <!-- What table -->
+                      <div class="tab-pane fade" id="what">
+				      <table class="table-dark table-bordered" style="border-color:#ffffff; font-color:#ffffff">
+                      <thead style="background-color:#00008b; font-color:#ffffff">
+							    <tr>
+								    <th>Property</th>
+								    <th>DC/DCterms</th>
+								    <th>XML Metadata Format</th>
+								    <th>DACS</th>
+								    <th>EAD</th>
+								    <th>Marc21</th>
+								    <th>MODS</th>
+								    <th>CIDOC-CRM</th>
+								    <th>Schema</th>
+                                    <th>LCDRG</th>
+							    </tr>
+							</thead>
+							<tbody>
+							    <tr>
+									<td>Has place (current location)</td>
+									<td>dc:coverage</td>
+									<td>/</td>
+									<td>6.1 Existence and Location of Originals</td>
+									<td>&lt;did&gt; / &lt;physloc&gt; </td>
+									<td>/</td>
+									<td>&lt;location&gt; / &lt;physicalLocation&gt;</td>
+									<td>crm:P55_has_current_location</td>
+									<td>schema:location</td>
+                                    <td>Copy Status (Location Facility)</td>
+								</tr>
+                           
+                          </tbody>
+                          </table>
+                        </div>
+                      
+                      </div>
+                          
+                          
                  </div><br> 
                  
                     

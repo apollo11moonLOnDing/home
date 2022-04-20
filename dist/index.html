@@ -300,7 +300,7 @@
                     </ul>
                     <p style="font-size: 16px">The metadata standards that we chose to align are therefore: Dublin Core, XML metadata format, DACS, EAD, Marc21, MODS, CIDOC-CRM, Schema, and LCDRG</p><br>
                     
-                    <ul class="nav nav-tabs nav-justified mb-4" id="tabs" role "tablist">
+                    <ul class="nav nav-tabs nav-justified mb-4" id="tabs" role="tablist">
                         <li class="nav-item" data-aos="zoom-in" role="presentation">
             			<a class="nav-link active show" data-bs-toggle="tab" href="#tab-1" style="background-color: #00008b; font-color:#ffffff">
                             <i class="bi bi-person"></i>
@@ -326,9 +326,8 @@
                         </a>
                         </li>
                     </ul>
-                    <br>
                     
-                    <!-- Who -->
+                    <!-- Who table -->
                     <div class="tab-content" id="content" data-aos="fade-up">
 			        <div class="tab-pane show active" id="tab-1" role="tabpanel">
 				    <div class="row justify-content-md-center">
@@ -445,16 +444,85 @@
                                     <td>Creating Individual (Creating Individual Type)</td>
 								</tr>
 							</tbody>
-					</table>
-				</div>
-			</div>
+					     </table>                 
+                      </div>
+			       </div>
+                    </div> 
+                    
+                      <!-- Where table -->
+                      <div class="tab-pane" id="tab-2" role="tabpanel">
+				      <div class="row justify-content-md-center">
+					  <table class="table-dark table-bordered" style="border-color:#ffffff; font-color:#ffffff">
+						    <thead style="background-color:#00008b; font-color:#ffffff">
+							    <tr>
+								    <th>Property</th>
+								    <th>DC/DCterms</th>
+								    <th>XML Metadata Format</th>
+								    <th>DACS</th>
+								    <th>EAD</th>
+								    <th>Marc21</th>
+								    <th>MODS</th>
+								    <th>CIDOC-CRM</th>
+								    <th>Schema</th>
+                                    <th>LCDRG</th>
+							    </tr>
+							</thead>
+							<tbody>
+							    <tr>
+									<td>Has place (current location)</td>
+									<td>dc:coverage</td>
+									<td>/</td>
+									<td>6.1 Existence and Location of Originals</td>
+									<td>&lt;did&gt; / &lt;physloc&gt; </td>
+									<td>/</td>
+									<td>&lt;location&gt; / &lt;physicalLocation&gt;</td>
+									<td>crm:P55_has_current_location</td>
+									<td>schema:location</td>
+                                    <tb>Copy Status (Location Facility)</tn>
+								</tr>
+                                <tr>
+									<td>Held at</td>
+									<td>dc:coverage</td>
+									<td>/</td>
+									<td>2.2.2 Name and Location of Repository</td>
+									<td>&lt;maintenanceagency&gt; / &lt;agencyname&gt; </td>
+									<td>/</td>
+									<td>&lt;location&gt; / &lt;physicalLocation&gt;</td>
+									<td>crm:P50_has_current_keeper</td>
+									<td>schema:location</td>
+                                    <tb>/</tn>
+								</tr>
+                                <tr>
+									<td>Made in</td>
+									<td>dc:coverage</td>
+									<td>&lt;place-list&gt; / &lt;place-element&gt; / &lt;place&gt;</td>
+									<td>7.1 Notes</td>
+									<td>&lt;geogname&gt;</td>
+									<td>260$e Place of manufacture</td>
+									<td>&lt;originInfo&gt; / &lt;place&gt;</td>
+									<td>/</td>
+									<td>schema:locationCreated</td>
+                                    <tb>/</tn>
+								</tr>
+                        	</tbody>
+					     </table>                 
+                      </div>
+			       </div>
+                 </div> 
+                 
                     
                     
                     
                     
                     
                     
-                </div>
+                    
+                    
+                </div><br>
+          
+        
+                    
+                    
                 
                 <!-- Theoretical Model -->  
                 <h2 class="page-section-heading text-center text-uppercase text-white" style="font-size:22px; font-family:SpaceFont">Theoretical Model</h2><br>

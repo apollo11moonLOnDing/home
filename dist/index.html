@@ -215,7 +215,7 @@
                 <div>
                     <p style="font-size: 16px">In order to progress our organisation of knowledge relating to the Apollo 11 moon landing, we identified the metadata standards employed by the provider institution of each of our objects. Our findings are summarised below:</p><br>
                     <table class="table-dark table-bordered" style="border-color:#ffffff; font-color:#ffffff">
-                        <thead>
+                        <thead style="background-color:#00008b; font-color:#ffffff">
                             <tr>
                                 <th>Item</th>
                                 <th>Type of item</th>
@@ -300,27 +300,27 @@
                     </ul>
                     <p style="font-size: 16px">The metadata standards that we chose to align are therefore: Dublin Core, XML metadata format, DACS, EAD, Marc21, MODS, CIDOC-CRM, Schema, and LCDRG</p><br>
                     
-                    <div class="container bcontent">
+                  <div class="container bcontent">
                     <ul class="nav nav-tabs">
-                        <li class="nav-item">
-            			    <a class="nav-link active" data-toggle="tab" href="#who">Who</a>
+                        <li class="nav-item" data-aos="zoom-in">
+            			    <a class="nav-link active show" data-bs-toggle="tab" href="#who">Who</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#where">Where</a>
+                        <li class="nav-item" data-aos="zoom-in">
+                            <a class="nav-link" data-bs-toggle="tab" href="#where">Where</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" data-toggle="tab" href="#when">When</a>
+                        <li class="nav-item" data-aos="zoom-in">
+                            <a class="nav-link" data-bs-toggle="tab" href="#when">When</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link"  data-toggle="tab" href="#what">What</a>
+                        <li class="nav-item" data-aos="zoom-in">
+                            <a class="nav-link"  data-bs-toggle="tab" href="#what">What</a>
                         </li>
                     </ul>
                
-              <div class="tab-content">
+              <div class="tab-content" data-aos="fade-up">
                     
                     <!-- Who table -->
                     
-			        <div class="tab-pane fade show active" id="who">
+			        <div class="tab-pane show active" id="who" role="tabpanel">
 				   	    <table class="table-dark table-bordered" style="border-color:#ffffff; font-color:#ffffff">
 						    <thead style="background-color:#00008b; font-color:#ffffff">
 							    <tr>
@@ -439,7 +439,7 @@
 			                      
                     
                       <!-- Where table -->
-                      <div class="tab-pane fade" id="where">
+                      <div class="tab-pane" id="where" role="tabpanel">
 				      <table class="table-dark table-bordered" style="border-color:#ffffff; font-color:#ffffff">
 						    <thead style="background-color:#00008b; font-color:#ffffff">
 							    <tr>
@@ -497,7 +497,7 @@
                       </div>
                      
                       <!-- When table -->
-                      <div class="tab-pane fade" id="when">
+                      <div class="tab-pane fade" id="when" role="tabpanel">
 				      <table class="table-dark table-bordered" style="border-color:#ffffff; font-color:#ffffff">
 			                <thead style="background-color:#00008b; font-color:#ffffff">
 							    <tr>
@@ -515,26 +515,35 @@
 							</thead>
 							<tbody>
 							    <tr>
-									<td>Has place (current location)</td>
-									<td>dc:coverage</td>
-									<td>/</td>
-									<td>6.1 Existence and Location of Originals</td>
-									<td>&lt;did&gt; / &lt;physloc&gt; </td>
-									<td>/</td>
-									<td>&lt;location&gt; / &lt;physicalLocation&gt;</td>
-									<td>crm:P55_has_current_location</td>
-									<td>schema:location</td>
-                                    <td>Copy Status (Location Facility)</td>
+									<td>Publication date</td>
+									<td>dcterms:issued</td>
+									<td>&lt;release&gt; / &lt;date&gt;</td>
+									<td>2.4.3 Date</td>
+									<td>&lt;unitdate&gt;</td>
+									<td>260$c Date of Publication</td>
+									<td>&lt;originInfo&gt; / &lt;dateIssued&gt;</td>
+									<td>crm:P4_has_time_span</td>
+									<td>schema:datePublished</td>
+                                    <td>Release Date</td>
 								</tr>
-                           
-                          </tbody>
+                                <tr>
+									<td>Set in</td>
+									<td>dc:date</td>
+									<td>/</td>
+									<td>2.4.7 Date Ranges</td>
+									<td>&lt;daterange&gt; / &lt;unitdate&gt;</td>
+									<td>/</td>
+									<td>&lt;originInfo&gt; / &lt;dateOther&gt;</td>
+									<td>crm:P81_ongoing_throughout</td>
+									<td>schema:contentReferenceTime</td>
+                                    <td>/</td>
+								</tr>
+                             </tbody>
                           </table>
                         </div>
-                          
-                          
-                          
+                                                               
                       <!-- What table -->
-                      <div class="tab-pane fade" id="what">
+                      <div class="tab-pane fade" id="what" role="tabpanel">
 				      <table class="table-dark table-bordered" style="border-color:#ffffff; font-color:#ffffff">
                       <thead style="background-color:#00008b; font-color:#ffffff">
 							    <tr>
@@ -552,41 +561,181 @@
 							</thead>
 							<tbody>
 							    <tr>
-									<td>Has place (current location)</td>
-									<td>dc:coverage</td>
+									<td>Has id</td>
+									<td>dc:identifier</td>
+									<td>&lt;trackid&gt;</td>
+									<td>2.1.3 Local Identifier</td>
+									<td>&lt;unitid&gt;</td>
 									<td>/</td>
-									<td>6.1 Existence and Location of Originals</td>
-									<td>&lt;did&gt; / &lt;physloc&gt; </td>
-									<td>/</td>
-									<td>&lt;location&gt; / &lt;physicalLocation&gt;</td>
-									<td>crm:P55_has_current_location</td>
-									<td>schema:location</td>
-                                    <td>Copy Status (Location Facility)</td>
+									<td>&lt;identifier&gt;</td>
+									<td>crm:P1_is_identified_by</td>
+									<td>schema:identifier</td>
+                                    <td>Object Identifier</td>
 								</tr>
-                           
-                          </tbody>
+                                <tr>
+									<td>Has format</td>
+									<td>dc:format / dcterms:hasFormat</td>
+									<td>&lt;trackformat&gt;</td>
+									<td>2.5 Extent</td>
+									<td>&lt;genreform&gt;</td>
+									<td>/</td>
+									<td>&lt;typeOfResource&gt;</td>
+									<td>/</td>
+									<td>schema:encodingFormat</td>
+                                    <td>Media Type (Format)</td>
+								</tr>
+                                <tr>
+									<td>Has title</td>
+									<td>dc:title</td>
+									<td>&lt;release&gt; / &lt;title&gt;</td>
+									<td>2.3 Title</td>
+									<td>&lt;title&gt;</td>
+									<td>245 $a Title</td>
+									<td>&lt;titleInfo&gt;</td>
+									<td>crm:P102_has_title</td>
+									<td>schema:name</td>
+                                    <td>Title</td>
+								</tr>
+                                <tr>
+									<td>Language</td>
+									<td>dc:language</td>
+									<td>&lt;work&gt; / &lt;language-list&gt; / &lt;language&gt; / &lt;text-representationlanguage&gt;</td>
+									<td>4.5.2 Languages and Scripts of the Material</td>
+									<td>&lt;language&gt;</td>
+									<td>41 Language code</td>
+									<td>&lt;language&gt;</td>
+									<td>crm:P72_has_language</td>
+									<td>schema:inLanguage</td>
+                                    <td>Language</td>
+								</tr>
+                                <tr>
+									<td>Has subject</td>
+									<td>dc:subject</td>
+									<td>/</td>
+									<td>3.1 Scope and Content</td>
+									<td>&lt;scopecontent&gt;</td>
+									<td>/</td>
+									<td>&lt;subject&gt;</td>
+									<td>crm:P62_depicts / crm:P129_is_about</td>
+									<td>schema:about</td>
+                                    <td>/</td>
+								</tr>
+                                <tr>
+									<td>Has type</td>
+									<td>dc:type</td>
+									<td>&lt;tracktype&gt;</td>
+									<td>/</td>
+									<td>&lt;genreform&gt;</td>
+									<td>336$a Content type term</td>
+									<td>&lt;typeOfResource&gt;</td>
+									<td>crm:P2_has_type</td>
+									<td>schema:additionalType</td>
+                                    <td>Object Type</td>
+								</tr>
+                                <tr>
+									<td>Has dimension</td>
+									<td>dcterms:spatial</td>
+									<td>/</td>
+									<td>2.5 Extent</td>
+									<td>&lt;dimensions&gt;</td>
+									<td>300$c Dimensions / 340$b Dimensions</td>
+									<td>/</td>
+									<td>crm:P43_has_dimension</td>
+									<td>schema:size</td>
+                                    <td>Specific Media Type (Dimension)</td>
+								</tr>
+                                <tr>
+									<td>Made for</td>
+									<td>/</td>
+									<td>/</td>
+									<td>3.1 Scope and Content</td>
+									<td>&lt;odd&gt;</td>
+									<td>/</td>
+									<td>/</td>
+									<td>/</td>
+									<td>/</td>
+                                    <td>Function and Use</td>
+								</tr>
+                                <tr>
+									<td>Used for</td>
+									<td>/</td>
+									<td>/</td>
+									<td>3.1 Scope and Content</td>
+									<td>&lt;odd&gt;</td>
+									<td>/</td>
+									<td>/</td>
+									<td>crm:P19_was_intended_use_of</td>
+									<td>/</td>
+                                    <td>Function and Use</td>
+								</tr>
+                                <tr>
+									<td>Has material</td>
+									<td>dcterms:medium</td>
+									<td>/</td>
+									<td>2.5 Extent</td>
+									<td>&lt;did&gt; / &lt;materialspec&gt;</td>
+									<td>300$b Other physical detail / 340$a Material base and configuration</td>
+									<td>&lt;physicalDescription&gt; / &lt;form&gt;</td>
+									<td>crm:P45_consists_of</td>
+									<td>schema:material</td>
+                                    <td>/</td>
+								</tr>
+                                <tr>
+									<td>Has duration</td>
+									<td>dcterms:extent</td>
+									<td>&lt;duration&gt;</td>
+									<td>2.5 Extent</td>
+									<td>&lt;odd&gt;</td>
+									<td>306$a Playing time</td>
+									<td>/</td>
+									<td>/</td>
+									<td>schema:duration</td>
+                                    <td>/</td>
+								</tr>
+                                <tr>
+									<td>Has genre</td>
+									<td>/</td>
+									<td>&lt;genrelist&gt; / &lt;genre&gt;</td>
+									<td>/</td>
+									<td>&lt;genreform&gt;</td>
+									<td>/</td>
+									<td>&lt;hasGenre&gt;</td>
+									<td>/</td>
+									<td>schema:genre</td>
+                                    <td>/</td>
+								</tr>
+                                <tr>
+									<td>Has episode / Is part of</td>
+									<td>dcterms:hasPart / dcterms:isPartOf</td>
+									<td>&lt;tracklist&gt; / &lt;track&gt;</td>
+									<td>/</td>
+									<td>&lt;c&gt;</td>
+									<td>/</td>
+									<td>&lt;part&gt;</td>
+									<td>crm:P148_has_component</td>
+									<td>schema:hasPart / schema:isPartOf</td>
+                                    <td>/</td>
+								</tr>
+                                <tr>
+									<td>Occurred during</td>
+									<td>dcterms:isPartOf</td>
+                                    <td>/</td>
+									<td>3.1 Scope and Content</td>
+									<td>&lt;chronitem&gt; / &lt;event&gt;</td>
+									<td>/</td>
+									<td>&lt;part&gt;</td>
+									<td>/</td>
+									<td>schema:temporalCoverage / schema:isPartOf</td>
+                                    <td>/</td>
+								</tr>
+                            </tbody>
                           </table>
                         </div>
                       
                       </div>
                     </div>
-                          
-                          
                  </div><br> 
-                 
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-              
-          
-        
-                    
-                    
-                
+       
                 <!-- Theoretical Model -->  
                 <h2 class="page-section-heading text-center text-uppercase text-white" style="font-size:22px; font-family:SpaceFont">Theoretical Model</h2><br>
                 <div>

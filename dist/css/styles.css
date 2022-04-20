@@ -3976,13 +3976,13 @@ textarea.form-control-lg {
   isolation: isolate;
 }
 .nav-tabs .nav-link.disabled {
-  color: #00008b;
+  color: #ffffff;
   background-color: transparent;
   border-color: transparent;
 }
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
-  color: #00008b;
+  color: #ffffff;
   background-color: #00008b;
   border-color: #00008b;
 }

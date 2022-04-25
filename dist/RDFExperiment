@@ -1,0 +1,67 @@
+@base <https://apollo11moonlonding.github.io/home/> .
+@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/7.1.1/> .
+@prefix schema: <https://schema.org/>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.	
+@prefix foaf: <http://xmlns.com/foaf/0.1/>.
+@prefix geonames: <https://www.geonames.org/>.
+@prefix viaf: <https://viaf.org/viaf/>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+@prefix dbr: <http://dbpedia.org/resource/>.
+@prefix dc: <http://purl.org/dc/terms/>.
+
+#spacesuit
+<item/spacesuit> a crm:E22_Human-Made_Object;
+			crm:P50_has_current_keeper viaf:140896947; #National Air and Space Museum
+			dc:creator viaf:146202023; #NASA
+			crm:P45_consists_of "beta cloth"^^xsd:string;
+			crm:P51_has_former_or_current_owner viaf:111826406;
+			crm:P12_occurred_in_the_presence_of <event/apollo11moonlanding>;
+			crm:P43_has_dimension "170x82x28cm"^^xsd:string;
+	                crm:P1_is_identified_by "A1973004000"^^xsd:string;
+			crm:P102_has_title "Pressure suit, A7-L, Armstrong, Apollo 11, Flown"^^xsd:string.
+
+#image
+<item/image> a schema:ImageObject;
+			crm:P62_depicts <people/NeilArmstrong>; #viaf:111826406
+			crm:P62_depicts <people/BuzzAldrin>; #viaf:110368892
+			crm:P62_depicts <people/MichaelCollins>; #viaf:84145408
+			crm:P1_is_identified_by "NASM-9A13960"^^xsd:string;
+			crm:P4_has_time_span "16th July 1968"^^xsd:date;
+			schema:contentLocation viaf:155896317; #Manned Space Centre
+			crm:P50_has_current_keeper viaf:140896947; #National Air and Space Museum
+			schema:encoding schema:Photograph;
+			dc:creator <people/TimBurgess>.
+
+#people
+<people/NeilArmstrong> a crm:E21_Person;
+			owl:SameAs viaf:111826406;
+			owl:SameAs dbr:Neil_Armstrong;
+			foaf:name "Neil Armstrong";
+			foaf:birthday "5th August 1930"^^xsd:date;
+			foaf:knows <people/BuzzAldrin>; #Buzz Aldrin
+			foaf:knows <people/MichaelCollins>. #MichaelCollins
+
+<people/BuzzAldrin> a crm:E21_Person;
+			owl:SameAs viaf:110368892;
+			owl:SameAs dbr:Buzz_Aldrin;
+			foaf:name "Buzz Aldrin";
+			foaf:birthday "20th January 1930"^^xsd:date;
+			foaf:knows <people/NeilArmstrong>; #NeilArmstrong
+			foaf:knows <people/MichaelCollins>. #MichaelCollins
+
+<people/MichaelCollins> a crm:E21_Person;
+			owl:SameAs viaf:84145408;
+			owl:SameAs dbr:Michael_Collins;
+			foaf:name "Michael Collins";
+			foaf:birthday "31st October 1930"^^xsd:date;
+			foaf:knows <people/NeilArmstrong>; #NeilArmstrong
+			foaf:knows <people/BuzzAldrin>. #BuzzAldrin
+
+#Event
+<event/apollo11moonlanding> a crm:E5_Event;
+			crm:P4_has_time_span "16–24th July 1969"^^xsd:date;
+			crm:P14_carried_out_by viaf:146202023; #NASA
+			dc:contributor viaf:110368892; #NeilArmstrong
+			dc:contributor viaf:110368892; #BuzzAldrin
+			dc:contributor viaf:84145408; #MichaelCollins
+			dc:coverage geonames:4699066. #Houston, Texas, USA

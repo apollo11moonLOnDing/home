@@ -1,0 +1,9 @@
+﻿Episode,schema:partOfSeries,Mad Men
+Episode,schema:contentReferenceTime,20th July 1969
+Episode,dbo:genre,Drama
+Episode,schema:author,Matthew Welner
+Episode,dc:extent,45 minutes
+Episode,crm:P72_has_language,English
+Episode,schema:datePublished,25th May 2014
+Episode,dc:subject,Apollo 11 moon landing
+TVSeries,crm:P2_has_type,TV Series

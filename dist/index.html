@@ -237,7 +237,8 @@
                                 <th>Item</th>
                                 <th>Type of item</th>
                                 <th>Provider</th>
-                                <th>Metadata standard</th>
+                                <th>Institution Metadata standard</th>
+                                <th>Chosen Metadata standard for alignment</th>
                             </tr>
                         <thead>
                         <tbody>
@@ -245,6 +246,7 @@
                                 <td>Special Message to Congress on Urgent National Needs</td>
                                 <td>Audio recording</td>
                                 <td>John F. Kennedy Presidential Library and Museum</td>
+                                <td>LCDRG (Lifecycle Data Requirements Guide) (<a href="https://www.archives.gov/research/catalog/lcdrg">declaration</a>)</td>
                                 <td>LCDRG (Lifecycle Data Requirements Guide)</td>
                             </tr>
                             <tr>
@@ -252,29 +254,34 @@
                                 <td>Episode of TV series</td>
                                 <td>IMDB</td>
                                 <td>Schema.org</td>
+                                <td>Schema.org</td>
                             </tr>
                             <tr>
                                 <td>Medal, Commemorative, Apollo 11</td>
                                 <td>Physical artefact</td>
                                 <td>National Air and Space Museum</td>
                                 <td>TMS software (The Museum System)</td>
+                                <td>CIDOC-CRM</td>
                             </tr>
                             <tr>
                                 <td>First on the Moon</td>
                                 <td>Book</td>
                                 <td>Library of Congress</td>
+                                <td>MODS (<a href="https://lccn.loc.gov/76103950/marcxml">declaration</a>)</td>
                                 <td>MODS</td>
                             </tr>
                             <tr>
                                 <td>Apollo 11 Launch Images Burgess: NASM-9A13960</td>
                                 <td>Digitised image</td>
                                 <td>National Air and Space Museum</td>
+                                <td>EAD (<a href="https://sirismm.si.edu/EADs/NASM.2009.0061-ead.xml">declaration</a>) / DACS (<a href="https://sirismm.si.edu/EADpdfs/NASM.2009.0061">declaration</a>)</td>
                                 <td>EAD / DACS</td>
                             </tr>
                             <tr>
                                 <td>2001: A Space Odyssey</td>
                                 <td>Book</td>
                                 <td>Library of Congress</td>
+                                <td>MODS (<a href="https://lccn.loc.gov/75362540/mod">declaraion</a>)</td>
                                 <td>MODS</td>
                             </tr>
                             <tr>
@@ -282,23 +289,27 @@
                                 <td>Physical artefact</td>
                                 <td>National Air and Space Museum</td>
                                 <td>TMS software (The Museum System)</td>
+                                <td>CIDOC-CRM</td>
                             </tr>
                             <tr>
                                 <td>We Never Went to the Moon</td>
                                 <td>Book</td>
                                 <td>WorldCat</td>
                                 <td>Unknown</td>
+                                <td>Marc21</td>
                             </tr>
                             <tr>
                                 <td>Man on the Moon</td>
                                 <td>Song</td>
                                 <td>MusicBrainz</td>
+                                <td>MMD (<a href="https://musicbrainz.org/doc/MusicBrainz_XML_Meta_Data">declaration</a>)</td>
                                 <td>MMD</td>
                             </tr>
                             <tr>
                                 <td>Memorandum to President Nixon</td>
                                 <td>Text of a speech</td>
                                 <td>National Archives Catalogue</td>
+                                <td>Dublin Core (<a href="https://www.archives.gov/records-mgmt/bulletins/2015/2015-04.html">declaration</a>)</td>
                                 <td>Dublin Core</td>
                             </tr>
                         </tbody>
@@ -782,7 +793,19 @@
                  <!-- Conceptual Model -->  
                 <h2 class="page-section-heading text-center text-uppercase text-white" style="font-size:22px; font-family:SpaceFont">Conceptual Model</h2><br>
                 <div>
-                    <p style="font-size: 16px">XXXXX</p><br>
+                    <p style="font-size: 16px">Through the employment of the most appropriate ontologies, schemas and vocabularies, our ER model was then transformed into a conceptual one.</p>
+                     <p style="font-size: 16px">This allowed us to advance the formalisation of our project and to better convey the entities and properties used for each object.</p>
+                     <p style="font-size: 16px">The main tools used for this step were:</p>
+                     <ol style="font-size:16px">
+                         <li>CIDOC-CRM: one of the most frequent ontologies in the model, both due to the fact that it is the best choice when it comes to describing museum objects - and many of our items indeed belong to this category - and because it is useful for harmonising information from different domains.</li>
+                         <li>FRBRoo: the result of the harmonisation of FRBR and CIDOC-CRM, representing an attempt to integrate CIDOC-CRM’s focus on museum and archival items with a focus on bibliographic items. A characteristic of this ontology is that it is based on the FRBR entity-relationship model and inherited its WEMI (Work, Expression, Manifestation, Item) schema, which was extremely useful to identify the relationships between the book “A Space Odyssey” and its movie adaptation, through the concept of “work” (frbroo:F1_work) and “expression” (frbroo:F2_expression).</li>
+                         <li>FABIO: an ontology especially designed for the bibliographic domain, fully integrated with FRBRoo and CIDOC-CRM, facilitating interoperability with items in our collection described using these ontologies.</li>
+                         <li>DC: used for more general entities and properties. For example, the creators or the subject of an item.</li>
+                         <li>FOAF: was employed to describe real life people (e.g.: Neil Armstrong) and the information related to them that we believed to be useful. For example: birthdates, roles, and death dates.</li>
+                         <li>Schema: applied to all items which did not necessarily belong in the LAM domain (for example, the TV episode, “Waterloo”), thanks to its flexibility and large number of properties and entities.</li>
+                         <li>The Music Ontology: used to describe the song, “Man on the Moon”, since it provides a model for publishing structured music-related data.</li>
+                         <li>The DBpedia ontology: an ontology manually created by its own audience, which was mostly used for the concepts ‘named after’ and ‘genre’.</li>
+                     </ol><br>
                     <div style="text-align:center">
                     <p><a href="#"><img src="#" width="85%"/></a></p><br>
                     </div>
@@ -801,6 +824,7 @@
                 <h2 class="page-section-heading text-center text-uppercase text-black mb-0" style="font-size:22px; font-family:SpaceFont">Data Description</h2><br>
                 <div>
                     <p style="font-size: 16px">Using our conceptual model we extrapolated a series of RDF triples about each object. Each row of the following tables represents a statement about each item, whilst the columns represent the subject, predicate, and object of each statement.</p>
+                    <p style="font-size: 16px">Both subject and objects are written in natural language, whereas the predicates are expressed through the ontologies found in the previous step.</p>
                     <p style="font-size: 16px">These tables can be downloaded as CSV files via the following links: <a href="#" download>"First on the Moon"</a> || <a href="SpacesuitCSVFile.csv" download>Spacesuit</a> || <a href="#" download>"We Never Went to the Moon"</a> || <a href="MemorandumCSVFile.csv" download>Memorandum</a> || <a href="ManontheMoonSongCSVFile.csv" download>"Man on the Moon"</a> || <a href="SpecialMessageCSVFile.csv" download>Message to Congress</a> || <a href="ImageCSVFile.csv" download>Image</a> || <a href="MedalCSVFile.csv" download>Medal</a> || <a href="WaterlooCSVFile.csv" download>"Waterloo"</a> || <a href="2001SpaceOdysseyCSVFile.csv" download>"2001: A Space Odyssey"</a></p>
                 </div><br>
                
@@ -1388,6 +1412,7 @@
             <!-- RDF Production Section-->
                 <h2 class="page-section-heading text-center text-uppercase text-black mb-0" style="font-size:22px; font-family:SpaceFont">RDF Production</h2><br>
                 <div>
+                    <p style="font-size: 16px">XXX</p>
                     <p style="font-size: 16px">Turtle serialisation, validated by <a href="http://ttl.summerofcode.be/">ID Lab Turtle Validator</a></p><br>
                   <script src="https://gist.github.com/RebeccaJillianBeattie/d27a4c31e4c385c0739bf1116dca7ab9.js"></script>
                 </div><br>
@@ -1419,7 +1444,7 @@
                             <p class="lead mb-0" text-align="center">Maddalena Ghiotto</p>
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-12" align="center">
-                            <p><img src="https://raw.githubusercontent.com/apollo11moonLOnDing/home/master/dist/Picture%20of%20Anita.jpeg" align="center" height="210px" width="210px" style="border-radius:50%"/></p><br>
+                            <p><img src="https://raw.githubusercontent.com/apollo11moonLOnDing/home/master/dist/Picture%20of%20AnitaCrop.jpeg" align="center" height="210px" width="210px" style="border-radius:50%"/></p><br>
                             <p class="lead mb-0" text-align="center">Anita Liviabella</p>
                         </div>
                         <div class="col-lg-3 col-md-6 col-sm-12" align="center">

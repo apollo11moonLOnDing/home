@@ -783,7 +783,7 @@
                         <li>Adding major temporal and spatial notions, mostly connected with the main event of the Apollo 11 moon landing, such as the launch and landing dates</li>
                         <li>Enhancing our representation of the ‘2001: A Space Odyssey’ book by including the fact that it is based on a work that had two expressions: the book version, as already included, but also a film version, the screenplay of which was written by Stanley Kubrick, who also contributed to the writing of the book version</li>
                         <li>Including the link between Arthur C. Clarke, author of the ‘2001: A Space Odyssey’ book, and the ‘First on the Moon’ book, for which Clarke wrote the epilogue</li>
-                        <li>Adding new concepts that allowed us to highlight the three narrative threads which were the focus of our knowledge organisation. For example: adding ‘the Space Race’ and ‘the Soviet Union’, and linking these to the ‘Special Message to Congress’, enabled us to emphasise the political background of the Apollo 11 moon landing. Additionally, adding ‘conspiracy theories’, and linking this to the ‘We Never Went to the Moon’ book and the ‘2001: A Space Odyssey’ book enabled us to stress the doubts which surrounded the moon landing (in particular, it allowed us to interlink Stanley Kubrick, contributor to the latter book, to the dissemination of conspiracy theories)</li>
+                        <li>Adding new concepts that allowed us to highlight the three narrative threads which were the focus of our knowledge organisation. For example: adding ‘the Space Race’ and ‘the Soviet Union’, and linking these to the ‘Special Message to Congress’, enabled us to emphasise the political background of the Apollo 11 moon landing. Furthermore, adding the concept of 'Landing a man on the moon' and linking it to the 'Space Race' and various objects allowed us to highlight the political background to the moon landing. Additionally, adding ‘conspiracy theories’, and linking this to the ‘We Never Went to the Moon’ book and the ‘2001: A Space Odyssey’ book enabled us to stress the doubts which surrounded the moon landing (in particular, it allowed us to interlink Stanley Kubrick, contributor to the latter book, to the dissemination of conspiracy theories)</li>
                     </ul><br>
                     <div style="text-align:center">
                     <p><a href="https://raw.githubusercontent.com/apollo11moonLOnDing/home/master/dist/TheoreticalMap.jpg"><img src="https://raw.githubusercontent.com/apollo11moonLOnDing/home/master/dist/TheoreticalMap.jpg" width="85%"/></a></p><br>
@@ -1412,17 +1412,37 @@
             <!-- RDF Production Section-->
                 <h2 class="page-section-heading text-center text-uppercase text-black mb-0" style="font-size:22px; font-family:SpaceFont">RDF Production</h2><br>
                 <div>
-                    <p style="font-size: 16px">XXX</p>
-                    <p style="font-size: 16px">Turtle serialisation, validated by <a href="http://ttl.summerofcode.be/">ID Lab Turtle Validator</a></p><br>
-                  <script src="https://gist.github.com/RebeccaJillianBeattie/d27a4c31e4c385c0739bf1116dca7ab9.js"></script>
+                    <p style="font-size: 16px">As the focus of our RDF production, we chose to concentrate on the aspects of the Apollo 11 moon landing which would allow us to create the maximum number of interlinkages, both within the entities themselves and within the landscape of the Web more broadly.</p>
+                    <p style="font-size: 16px">As such, we produced RDF triples using the following events/items/people:</p>
+                    <ul style="font-size: 16px">
+                        <li>The event of the moon landing itself, as part of the larger Apollo 11 Programme</li>
+                        <li>Neil Armstrong the individual</li>
+                        <li>The spacesuit worn by Neil Armstrong during the moon landing, a highly symbolic object</li>
+                        <li>The book and movie versions of “2001: A Space Odyssey” which allowed us to introduce and connect Arthur C. Clarke and Stanley Kubrick, creators of the book and movie respectively, but who also contributed to each other’s work</li>
+                        <li>The “First on the Moon” book, which is linked to Neil Armstring as a writer, and Arthur C. Clarke as a contributor (since he wrote the epilogue)</li>
+                    </ul><br>
+                     <p style="font-size: 16px">The first step in this process of RDF production was to name our entities through the creation of URIs for certain items, concepts, events, and people:</p>
+                     <ul style="font-size: 16px">
+                         <li>https://apollo11moonlonding.github.io/event/Apollo11MoonLanding</li>
+                         <li>https://apollo11moonlonding.github.io/people/NeilArmstrong</li>
+                         <li>https://apollo11moonlonding.github.io/items/SpaceSuitArtefact</li>
+                         <li>https://apollo11moonlonding.github.io/items/SpaceOdysseyBook</li>
+                         <li>https://apollo11moonlonding.github.io/people/ArthurClarke</li>
+                         <li>https://apollo11moonlonding.github.io/items/SpaceOdysseyFilm</li>
+                         <li>https://apollo11moonlonding.github.io/people/StanleyKubrick</li>
+                         <li>https://apollo11moonlonding.github.io/items/FirstOnMoonBook</li>
+                    </ul><br>
+                    <p style="font-size: 16px">We then transformed the statements from our conceptual model into RDF statements, serialised in Turtle format.</p>
+                    <p style="font-size: 16px">Furthermore, Using owl:SameAs we linked our entities to authority resources on the Web (such as DBpedia, Geonames, the Library of Congress Authority Records, and VIAF). And using skos:broader and skos:narrower we linked our entities (the Apollo 11 moon landing, in particular) to conceptually broader and narrower entities respectively.</p><br>
+                  <script src="X"></script>
                 </div><br>
                   
                 <!-- RDF Visualisation Section-->
                 <h2 class="page-section-heading text-center text-uppercase text-black mb-0" style="font-size:22px; font-family:SpaceFont">RDF Visualisation</h2><br>
                 <div>
-                    <p style="font-size: 16px">Graph rendered using <a href="https://www.ldf.fi/service/rdf-grapher">RDF grapher</a></p><br>
+                    <p style="font-size: 16px">We then visualised the serialisation using <a href="https://www.ldf.fi/service/rdf-grapher">RDF grapher</a></p><br>
                     <div style="text-align:center">
-                    <p><a href="https://raw.githubusercontent.com/apollo11moonLOnDing/home/master/dist/RDFGrapherVis.png"><img src="https://raw.githubusercontent.com/apollo11moonLOnDing/home/master/dist/RDFGrapherVis.png" width="85%"/></a></p><br>
+                    <p><a href="X"><img src="X" width="85%"/></a></p><br>
                     </div>
                </div> 
            </div>

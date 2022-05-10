@@ -837,7 +837,7 @@
                 <div>
                     <p style="font-size: 16px">Using our conceptual model we extrapolated a series of RDF triples about each object. Each row of the following tables represents a statement about each item, whilst the columns represent the subject, predicate, and object of each statement.</p>
                     <p style="font-size: 16px">Both subject and objects are written in natural language, whereas the predicates are expressed through the ontologies found in the previous step.</p>
-                    <p style="font-size: 16px">These tables can be downloaded as CSV files via the following links: <a href="#" download>"First on the Moon"</a> || <a href="SpacesuitCSVFile.csv" download>Spacesuit</a> || <a href="#" download>"We Never Went to the Moon"</a> || <a href="MemorandumCSVFile.csv" download>Memorandum</a> || <a href="ManontheMoonSongCSVFile.csv" download>"Man on the Moon"</a> || <a href="SpecialMessageCSVFile.csv" download>Message to Congress</a> || <a href="ImageCSVFile.csv" download>Image</a> || <a href="MedalCSVFile.csv" download>Medal</a> || <a href="WaterlooCSVFile.csv" download>"Waterloo"</a> || <a href="2001SpaceOdysseyCSVFile.csv" download>"2001: A Space Odyssey"</a></p>
+                    <p style="font-size: 16px">These tables can be downloaded as CSV files via the following links: <a href="FirstOnMoonBookCSVFile.csv" download>"First on the Moon"</a> || <a href="SpacesuitCSVFile.csv" download>Spacesuit</a> || <a href="NeverWentToMoonCSVFile.csv" download>"We Never Went to the Moon"</a> || <a href="MemorandumCSVFile.csv" download>Memorandum</a> || <a href="ManontheMoonSongCSVFile.csv" download>"Man on the Moon"</a> || <a href="SpecialMessageCSVFile.csv" download>Message to Congress</a> || <a href="ImageCSVFile.csv" download>Image</a> || <a href="MedalCSVFile.csv" download>Medal</a> || <a href="WaterlooCSVFile.csv" download>"Waterloo"</a> || <a href="2001SpaceOdysseyCSVFile.csv" download>"2001: A Space Odyssey"</a></p>
                 </div><br>
                
                <div class="container bcontent">
@@ -919,9 +919,49 @@
 							</thead>
 							<tbody>
 								<tr>
-									<td style="background-color:#64B5F6">X</td>
-                                    <td>X</td>
-                                    <td>X</td>
+									<td style="background-color:#64B5F6">Book</td>
+                                    <td>fabio:has_creator</td>
+                                    <td>Neil Armstrong</td>
+								</tr>
+                                <tr>
+									<td style="background-color:#64B5F6">Book</td>
+                                    <td>fabio:has_language</td>
+                                    <td>English</td>
+								</tr>
+                                <tr>
+									<td style="background-color:#64B5F6">Book</td>
+                                    <td>fabio:has_format</td>
+                                    <td>Print book</td>
+								</tr>
+                                <tr>
+									<td style="background-color:#64B5F6">Book</td>
+                                    <td>fabio:has_identifier</td>
+                                    <td>"07181073659780718107369"</td>
+								</tr>
+                                <tr>
+									<td style="background-color:#64B5F6">Book</td>
+                                    <td>fabio:has_title</td>
+                                    <td>"First on the Moon"</td>
+								</tr>
+                                <tr>
+									<td style="background-color:#64B5F6">Book</td>
+                                    <td>fabio:has_publication_date</td>
+                                    <td>1970</td>
+								</tr>
+                                <tr>
+									<td style="background-color:#64B5F6">Book</td>
+                                    <td>fabio:has_publisher</td>
+                                    <td>Little, Brown, and Company</td>
+								</tr>
+                                <tr>
+									<td style="background-color:#64B5F6">Book</td>
+                                    <td>bf:subject</td>
+                                    <td>Apollo 11 moon landing</td>
+								</tr>
+                                <tr>
+									<td style="background-color:#64B5F6">Publisher</td>
+                                    <td>schema:location</td>
+                                    <td>Boston</td>
 								</tr>
                             </tbody>
                         </table>
@@ -994,9 +1034,49 @@
 							</thead>
 							<tbody>
 								<tr>
-									<td style="background-color:#64B5F6">X</td>
-                                    <td>X</td>
-                                    <td>X</td>
+									<td style="background-color:#64B5F6">Book</td>
+                                    <td>fabio:has_title</td>
+                                    <td>"We Never Went to the Moon"</td>
+								</tr>
+                                <tr>
+									<td style="background-color:#64B5F6">Book</td>
+                                    <td>fabio:has_creator</td>
+                                    <td>Bill Kaysing</td>
+								</tr>
+                                <tr>
+									<td style="background-color:#64B5F6">Book</td>
+                                    <td>bf:subject</td>
+                                    <td>Apollo 11 moon landing</td>
+								</tr>
+                                <tr>
+									<td style="background-color:#64B5F6">Book</td>
+                                    <td>bf:subject</td>
+                                    <td>Conspiracy theories</td>
+								</tr>
+                                <tr>
+									<td style="background-color:#64B5F6">Book</td>
+                                    <td>fabio:has_language</td>
+                                    <td>English</td>
+								</tr>
+                                <tr>
+									<td style="background-color:#64B5F6">Book</td>
+                                    <td>fabio:has_identifier</td>
+                                    <td>"0787304875, 9780787304874"</td>
+								</tr>
+                                <tr>
+									<td style="background-color:#64B5F6">Book</td>
+                                    <td>fabio:has_publication_date</td>
+                                    <td>1970</td>
+								</tr>
+                                <tr>
+									<td style="background-color:#64B5F6">Book</td>
+                                    <td>fabio:has_format</td>
+                                    <td>Print book</td>
+								</tr>
+                                <tr>
+									<td style="background-color:#64B5F6">Book</td>
+                                    <td>fabio:has_publisher</td>
+                                    <td>Fountain Valley, CA: Eden Press</td>
 								</tr>
                             </tbody>
                         </table>
@@ -1365,8 +1445,23 @@
 								</tr>
                                 <tr>
 									<td style="background-color:#64B5F6">Book</td>
-                                    <td>fabio:contributor</td>
+                                    <td>fabio:isManifestationOf</td>
+                                    <td>Work</td>
+								</tr>
+                                <tr>
+									<td style="background-color:#64B5F6">Book</td>
+                                    <td>fabio:has_format</td>
+                                    <td>Print book</td>
+								</tr>
+                                <tr>
+									<td style="background-color:#64B5F6">Book</td>
+                                    <td>schema:contributor</td>
                                     <td>Stanley Kubrick</td>
+								</tr>
+                                <tr>
+									<td style="background-color:#64B5F6">Book</td>
+                                    <td>fabio:has_publication_date</td>
+                                    <td>1968</td>
 								</tr>
                                 <tr>
 									<td style="background-color:#64B5F6">Book</td>
@@ -1375,44 +1470,56 @@
 								</tr>
                                 <tr>
 									<td style="background-color:#64B5F6">Book</td>
-                                    <td>crm:P4_has_time_span</td>
-                                    <td>1968</td>
-								</tr>
-                                <tr>
-									<td style="background-color:#64B5F6">Book</td>
                                     <td>fabio:has_publisher</td>
-                                    <td>New American Library</td>
+                                    <td>Arthur C. Clarke</td>
 								</tr>
                                 <tr>
-									<td style="background-color:#64B5F6">Book</td>
-                                    <td>crm:P2_has_type</td>
-                                    <td>Print book</td>
+									<td style="background-color:#64B5F6">Work</td>
+                                    <td>frbr:realization</td>
+                                    <td>Expression</td>
 								</tr>
                                 <tr>
-									<td style="background-color:#64B5F6">Book</td>
-                                    <td>fabio:has_place_of_publication</td>
+									<td style="background-color:#64B5F6">Work</td>
+                                    <td>schema:about</td>
+                                    <td>Landing a man on the moon</td>
+								</tr>
+                                <tr>
+									<td style="background-color:#64B5F6">Movie</td>
+                                    <td>schema:contributor</td>
+                                    <td>Arthur C. Clarke</td>
+								</tr>
+                                <tr>
+									<td style="background-color:#64B5F6">Movie</td>
+                                    <td>rdf:type</td>
+                                    <td>Expression</td>
+								</tr>
+                                <tr>
+									<td style="background-color:#64B5F6">Movie</td>
+                                    <td>schema:duration</td>
+                                    <td>142 minutes</td>
+								</tr>
+                                <tr>
+									<td style="background-color:#64B5F6">Movie</td>
+                                    <td>schema:director</td>
+                                    <td>Stanley Kubrick</td>
+								</tr>
+                                <tr>
+									<td style="background-color:#64B5F6">Movie</td>
+                                    <td>schema:inLanguage</td>
+                                    <td>English</td>
+								</tr>
+                                <tr>
+									<td style="background-color:#64B5F6">Movie</td>
+                                    <td>bdo:genre</td>
+                                    <td>Sci-fi</td>
+								</tr>
+                                <tr>
+									<td style="background-color:#64B5F6">Publisher</td>
+                                    <td>schema:location</td>
                                     <td>New York</td>
 								</tr>
-                                <tr>
-									<td style="background-color:#64B5F6">Book</td>
-                                    <td>dc:subject</td>
-                                    <td>Apollo 11 moon landing</td>
-								</tr>
-                                <tr>
-									<td style="background-color:#64B5F6">Work</td>
-                                    <td>frbroo:R40_has_representative_expression</td>
-                                    <td>Book</td>
-								</tr>
-                                <tr>
-									<td style="background-color:#64B5F6">Work</td>
-                                    <td>frbroo:R40_has_representative_expression</td>
-                                    <td>Film</td>
-								</tr>
-                                <tr>
-									<td style="background-color:#64B5F6">Film</td>
-                                    <td>crm:P2_has_type</td>
-                                    <td>Film</td>
-								</tr>
+                                
+                                
                             </tbody>
                         </table>
                   </div>

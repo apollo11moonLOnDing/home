@@ -1610,17 +1610,39 @@
                         <li>The book and movie versions of “2001: A Space Odyssey” which allowed us to introduce and connect Arthur C. Clarke and Stanley Kubrick, creators of the book and movie respectively, but who also contributed to each other’s work</li>
                         <li>The “First on the Moon” book, which is linked to Neil Armstrong as a writer, and Arthur C. Clarke as a contributor (since he wrote the epilogue)</li>
                     </ul><br>
-                     <p style="font-size: 16px">The first step in this process of RDF production was to name our entities through the creation of URIs for certain items, concepts, events, and people:</p>
+                     <p style="font-size: 16px">The first step in this process of RDF production was to name our entities through the creation of URIs for certain items, concepts, events, people, and institutions:</p>
+                     <p style="font-size: 16px">Items:</p>
                      <ul style="font-size: 16px">
-                         <li>https://apollo11moonlonding.github.io/event/Apollo11MoonLanding</li>
-                         <li>https://apollo11moonlonding.github.io/people/NeilArmstrong</li>
-                         <li>https://apollo11moonlonding.github.io/items/SpaceSuitArtefact</li>
-                         <li>https://apollo11moonlonding.github.io/items/SpaceOdysseyBook</li>
-                         <li>https://apollo11moonlonding.github.io/people/ArthurClarke</li>
-                         <li>https://apollo11moonlonding.github.io/items/SpaceOdysseyFilm</li>
-                         <li>https://apollo11moonlonding.github.io/people/StanleyKubrick</li>
-                         <li>https://apollo11moonlonding.github.io/items/FirstOnMoonBook</li>
-                    </ul><br>
+                         <li>https://apollo11moonlonding.github.io/item/SpaceOdysseyBook</li>
+                         <li>https://apollo11moonlonding.github.io/item/SpaceOdysseyMovie</li>
+                         <li>https://apollo11moonlonding.github.io/item/FirstOnMoonBook</li>
+                     </ul>
+                     <p style="font-size: 16px">Concepts:</p>
+                     <ul style="font-size: 16px">
+                         <li>https://apollo11moonlonding.github.io/concept/SpaceOdysseyWork</li>
+                     </ul>
+                     <p style="font-size: 16px">Events:</p>
+                     <ul style="font-size: 16px">
+                         <li>https://apollo11moonlonding.github.io/event/Apollo11Moonlanding</li>
+                         <li>https://apollo11moonlonding.github.io/event/Apollo11Mission</li>
+                         <li>https://apollo11moonlonding.github.io/event/SpaceRace</li>
+                     </ul>
+                     <p style="font-size: 16px">People:</p>
+                     <ul style="font-size: 16px">
+                         <li>https://apollo11moonlonding.github.io/person/NeilArmstrong</li>
+                         <li>https://apollo11moonlonding.github.io/person/ArthurClarke</li>
+                         <li>https://apollo11moonlonding.github.io/person/StanleyKubrick</li>
+                     </ul>
+                     <p style="font-size: 16px">Institutions:</p>
+                     <ul style="font-size: 16px">
+                         <li>https://apollo11moonlonding.github.io/institution/NewAmericanLibrary</li>
+                         <li>https://apollo11moonlonding.github.io/institution/LittleBrownAndCompany</li>
+                         <li>https://apollo11moonlonding.github.io/institution/NASA</li>
+                     </ul>
+                     <p style="font-size: 16px">Places:</p>
+                     <ul style="font-size: 16px">
+                         <li>https://apollo11moonlonding.github.io/place/Wapakoneta</li>
+                     </ul><br>                    
                     <p style="font-size: 16px">We then transformed the statements from our conceptual model into RDF statements, serialised in Turtle format.</p>
                     <p style="font-size: 16px">Furthermore, Using owl:SameAs we linked our entities to authority resources on the Web (such as DBpedia, Geonames, the Library of Congress Authority Records, and VIAF). And using skos:broader and skos:narrower we linked our entities (the Apollo 11 moon landing, in particular) to conceptually broader and narrower entities respectively.</p><br>
                     <script src="https://gist.github.com/RebeccaJillianBeattie/86f2d8ad87d809b2342fbb288f2e80f5.js"></script>

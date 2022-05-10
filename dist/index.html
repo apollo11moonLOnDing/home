@@ -837,13 +837,19 @@
                 <div>
                     <p style="font-size: 16px">Using our conceptual model we extrapolated a series of RDF triples about each object. Each row of the following tables represents a statement about each item, whilst the columns represent the subject, predicate, and object of each statement.</p>
                     <p style="font-size: 16px">Both subject and objects are written in natural language, whereas the predicates are expressed through the ontologies found in the previous step.</p>
-                    <p style="font-size: 16px">These tables can be downloaded as CSV files via the following links: <a href="FirstOnMoonBookCSVFile.csv" download>"First on the Moon"</a> || <a href="SpacesuitCSVFile.csv" download>Spacesuit</a> || <a href="NeverWentToMoonCSVFile.csv" download>"We Never Went to the Moon"</a> || <a href="MemorandumCSVFile.csv" download>Memorandum</a> || <a href="ManontheMoonSongCSVFile.csv" download>"Man on the Moon"</a> || <a href="SpecialMessageCSVFile.csv" download>Message to Congress</a> || <a href="ImageCSVFile.csv" download>Image</a> || <a href="MedalCSVFile.csv" download>Medal</a> || <a href="WaterlooCSVFile.csv" download>"Waterloo"</a> || <a href="2001SpaceOdysseyCSVFile.csv" download>"2001: A Space Odyssey"</a></p>
+                    <p style="font-size: 16px">These tables can be downloaded as CSV files via the following links: <a href="MoonLandingCSVFile.csv" download>Moon Landing Event</a> || <a href="FirstOnMoonBookCSVFile.csv" download>"First on the Moon"</a> || <a href="SpacesuitCSVFile.csv" download>Spacesuit</a> || <a href="NeverWentToMoonCSVFile.csv" download>"We Never Went to the Moon"</a> || <a href="MemorandumCSVFile.csv" download>Memorandum</a> || <a href="ManontheMoonSongCSVFile.csv" download>"Man on the Moon"</a> || <a href="SpecialMessageCSVFile.csv" download>Message to Congress</a> || <a href="ImageCSVFile.csv" download>Image</a> || <a href="MedalCSVFile.csv" download>Medal</a> || <a href="WaterlooCSVFile.csv" download>"Waterloo"</a> || <a href="2001SpaceOdysseyCSVFile.csv" download>"2001: A Space Odyssey"</a></p>
                 </div><br>
                
                <div class="container bcontent">
                     <ul class="nav nav-tabs nav-justified mb-4" id="tabs" role="tablist">
                         <li class="nav-item" data-aos="zoom-in">
-            			    <a class="nav-link active show" data-bs-toggle="tab" href="#firstonthemoon">
+            			    <a class="nav-link active show" data-bs-toggle="tab" href="#moonlanding">
+                                <i class="bi bi-moon-fill"></i>
+                                <p style="font-size:9pt">"First on the Moon"</p>
+                            </a>
+                        </li>
+                        <li class="nav-item" data-aos="zoom-in">
+            			    <a class="nav-link" data-bs-toggle="tab" href="#firstonthemoon">
                                 <i class="bi bi-book"></i>
                                 <p style="font-size:9pt">"First on the Moon"</p>
                             </a>
@@ -906,9 +912,73 @@
              
                       
               <div class="tab-content" data-aos="fade-up">
-                    
+                  <!--Moon landing event table -->
+                  <div class="tab-pane show active" class="justify-content-md-center" id="moonlanding" role="tabpanel">
+				   	    <table class="table" style="background-color:#FFFFFF; font-size:14px">
+						    <thead>
+							    <tr>
+								    <th>Subject</th>
+								    <th>Predicate</th>
+								    <th>Object</th>
+							    </tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td style="background-color:#64B5F6">Event</td>
+                                    <td>rdf:type</td>
+                                    <td>Space mission</td>
+								</tr>
+                                <tr>
+									<td style="background-color:#64B5F6">Event</td>
+                                    <td>dbo:launchDate</td>
+                                    <td>16th July 1969</td>
+								</tr>
+                                <tr>
+									<td style="background-color:#64B5F6">Event</td>
+                                    <td>dbo:landingDate</td>
+                                    <td>20th July 1969</td>
+								</tr>
+                                <tr>
+									<td style="background-color:#64B5F6">Event</td>
+                                    <td>dbo:missionDuration</td>
+                                    <td>"8 days, 3 hours, 18 minutes, 35 seconds"</td>
+								</tr>
+                                <tr>
+									<td style="background-color:#64B5F6">Event</td>
+                                    <td>dbo:lunarSurfaceTime</td>
+                                    <td>"21 hours, 36 minutes"</td>
+								</tr>
+                                <tr>
+									<td style="background-color:#64B5F6">Event</td>
+                                    <td>crm:P11_had_participant</td>
+                                    <td>Neil Armstrong</td>
+								</tr>
+                                <tr>
+									<td style="background-color:#64B5F6">Event</td>
+                                    <td>crm:P11_had_participant</td>
+                                    <td>Michael Collins</td>
+								</tr>
+                                <tr>
+									<td style="background-color:#64B5F6">Event</td>
+                                    <td>crm:P11_had_participant</td>
+                                    <td>Edwin Aldrin Jr</td>
+								</tr>
+                                <tr>
+									<td style="background-color:#64B5F6">Event</td>
+                                    <td>schema:organizer</td>
+                                    <td>NASA</td>
+								</tr>
+                                <tr>
+									<td style="background-color:#64B5F6">Event</td>
+                                    <td>schema:organizer</td>
+                                    <td>President John F. Kennedy</td>
+								</tr>
+                            </tbody>
+                      </table>
+                  </div>
+                  
                     <!-- First on the Moon table -->
-			        <div class="tab-pane show active" class="justify-content-md-center" id="firstonthemoon" role="tabpanel">
+			        <div class="tab-pane" class="justify-content-md-center" id="firstonthemoon" role="tabpanel">
 				   	    <table class="table" style="background-color:#FFFFFF; font-size:14px">
 						    <thead>
 							    <tr>
@@ -979,42 +1049,42 @@
 							</thead>
 							<tbody>
 								<tr>
-									<td style="background-color:#64B5F6">Human-Made_Object</td>
+									<td style="background-color:#64B5F6">Human-Made Object</td>
                                     <td>crm:P50_has_current_keeper</td>
                                     <td>National Air and Space Museum</td>
 								</tr>
                                 <tr>
-									<td style="background-color:#64B5F6">Human-Made_Object</td>
+									<td style="background-color:#64B5F6">Human-Made Object</td>
                                     <td>dc:creator</td>
                                     <td>NASA</td>
 								</tr>
                                 <tr>
-									<td style="background-color:#64B5F6">Human-Made_Object</td>
+									<td style="background-color:#64B5F6">Human-Made Object</td>
                                     <td>crm:P2_has_type</td>
                                     <td>Material equipment</td>
 								</tr>
                                 <tr>
-									<td style="background-color:#64B5F6">Human-Made_Object</td>
+									<td style="background-color:#64B5F6">Human-Made Object</td>
                                     <td>crm:P45_consists_of</td>
                                     <td>Beta cloth</td>
 								</tr>
                                 <tr>
-									<td style="background-color:#64B5F6">Human-Made_Object</td>
+									<td style="background-color:#64B5F6">Human-Made Object</td>
                                     <td>crm:P51_has_former_or_current_owner</td>
                                     <td>Neil Armstrong</td>
 								</tr>
                                 <tr>
-									<td style="background-color:#64B5F6">Human-Made_Object</td>
+									<td style="background-color:#64B5F6">Human-Made Object</td>
                                     <td>crm:P12_occurred_in_the_presence_of</td>
                                     <td>The Apollo 11 moon landing</td>
 								</tr>
                                 <tr>
-									<td style="background-color:#64B5F6">Human-Made_Object</td>
+									<td style="background-color:#64B5F6">Human-Made Object</td>
                                     <td>crm:P43_has_dimension</td>
                                     <td>170x82x28cm</td>
 								</tr>
                                 <tr>
-									<td style="background-color:#64B5F6">Human-Made_Object</td>
+									<td style="background-color:#64B5F6">Human-Made Object</td>
                                     <td>crm:P1_is_identified_by</td>
                                     <td>A1973004000</td>
 								</tr>

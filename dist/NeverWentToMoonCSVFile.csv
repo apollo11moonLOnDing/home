@@ -1,0 +1,9 @@
+﻿Book,fabio:has_title,"""We Never Went to the Moon"""
+Book,fabio:hac_creator,Bill Kaysing
+Book,bf:subject,Apollo 11 moon landing
+Book,bf:subject,Conspiracy theories
+Book,fabio:has_language,English
+Book,fabio:has_identifier,"""0787304875, 9780787304874"""
+Book,fabio:has_publication_date,1970
+Book,fabio:has_format,print book
+Book,fabio:has_publisher,"Fountain Valley, CA: Eden Press"

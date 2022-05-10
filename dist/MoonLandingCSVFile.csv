@@ -1,0 +1,10 @@
+﻿Event,rdf:type,Space mission
+Event,dbo:launchDate,16th July 1969
+Event,dbo:landingDate,20th July 1969
+Event,dbo:missionDuration,"""8 days, 3 hours, 18 minutes, 35 seconds"""
+Event,dbo:lunarSurfaceTime,"""21 hours, 36 minutes"""
+Event,crm:P11_had_participant,Neil Armstrong
+Event,crm:P11_had_participant,Michael Collins
+Event,crm:P11_had_participant,Edwin Aldrin Jr
+Event,schema:organizer,NASA
+Event,schema:organizer,President John F. Kennedy

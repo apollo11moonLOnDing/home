@@ -1,0 +1,16 @@
+﻿Book,fabio:has_creator,Arthur C. Clarke
+Book,fabio:isManifestationOf,Work
+Book,fabio:has_format,Print book
+Book,schema:contributor,Stanley Kubrick
+Book,fabio:has_publication_date,1968
+Book,fabio:has_language,English
+Book,fabio:has_publisher,New American Library
+Publisher,schema:location,New York
+Work,frbr:realization,Expression
+Work,schema:about,Landing a man on the moon
+Movie,schema:contributor,Arthur C. Clarke
+Movie,rdf:type,Expression
+Movie,schema:duration,142 minutes
+Movie,schema:director,Stanley Kubrick
+Movie,schema:inLanguage,English 
+Movie,dbo:genre,Sci-fi

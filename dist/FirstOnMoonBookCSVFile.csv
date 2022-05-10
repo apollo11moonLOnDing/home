@@ -1,0 +1,9 @@
+﻿Book,fabio:has_creator,Neil Armstrong
+Book,fabio:has_language,English
+Book,fabio:has_format,Print book
+Book,fabio:has_identifier,"""07181073659780718107369"""
+Book,fabio:has_title,"""First on the Moon"""
+Book,fabio:has_publication_date,1970
+Book,fabio:has_publisher,"Little, Brown, and Company"
+Book,bf:subject,Apollo 11 moon landing
+Publisher,schema:location,Boston

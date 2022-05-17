@@ -806,18 +806,22 @@
                 <div>
                     <p style="font-size: 16px">Through the employment of the most appropriate ontologies, schemas and vocabularies, our ER model was then transformed into a conceptual one.</p>
                      <p style="font-size: 16px">This allowed us to advance the formalisation of our project and to better convey the entities and properties used for each object.</p>
-                     <p style="font-size: 16px">The main tools used for this step were:</p>
+                     <p style="font-size: 16px">The main ontologies used for this step were:</p>
                      <ol style="font-size:16px">
                          <li>CIDOC-CRM: one of the most frequent ontologies in the model, both due to the fact that it is the best choice when it comes to describing museum objects - and many of our items indeed belong to this category - and because it is useful for harmonising information from different domains.</li>
-                         <li>FRBRoo: the result of the harmonisation of FRBR and CIDOC-CRM, representing an attempt to integrate CIDOC-CRM’s focus on museum and archival items with a focus on bibliographic items. A characteristic of this ontology is that it is based on the FRBR entity-relationship model and inherited its WEMI (Work, Expression, Manifestation, Item) schema, which was extremely useful to identify the relationships between the book “A Space Odyssey” and its movie adaptation, through the concept of “work” (frbroo:F1_work) and “expression” (frbroo:F2_expression).</li>
-                         <li>FABIO: an ontology especially designed for the bibliographic domain, fully integrated with FRBRoo and CIDOC-CRM, facilitating interoperability with items in our collection described using these ontologies.</li>
-                         <li>DC: used for more general entities and properties. For example, the creators or the subject of an item.</li>
-                         <li>FOAF: was employed to describe real life people (e.g.: Neil Armstrong) and the information related to them that we believed to be useful. For example: birthdates, roles, and death dates.</li>
-                         <li>Schema: applied to all items which did not necessarily belong in the LAM domain (for example, the TV episode, “Waterloo”), thanks to its flexibility and large number of properties and entities.</li>
+                         <li>FRBR: an IFLA standard that proposes the creation of bibliographic concepts according to the WEMI model, (Work, Expression, Manifestation, Item) schema, which was extremely useful to identify the relationships between the book “A Space Odyssey” and its movie adaptation, through the concept of “work” (frbr-.Work) and “expression” (frbr:Expression).</li>
+                         <li>FABIO: a FRBR-aligned ontology, especially designed for the bibliographic domain, that integrates new entities of published or potentially publishable material, as well as new properties to extend the FRBR data model. Designed to have greater flexibility and interoperability, it facilitates the descriptions and connections of bibliographic items in our collection.</li>
+                         <li>DC: used for more general entities and properties. For example, creators or the subject of an event.</li>
+                         <li>FOAF: was employed to describe real life people (e.g.: Neil Armstrong) and the relationships between people.</li>
+                         <li>PRO: was adopted to describe characterisation of the roles of agents in our scenario.</li>
+                         <li>Schema: applied to all items which did not necessarily belong in the LAM domain (for example, the TV episode, “Waterloo”), thanks to its flexibility and large number of properties and entities. It was also adopted to describe persons that belongs to our scenario more as actors of events rather then as persons related to the creation and description of items.</li>
                          <li>The Music Ontology: used to describe the song, “Man on the Moon”, since it provides a model for publishing structured music-related data.</li>
                          <li>The DBpedia ontology: an ontology manually created by its own audience, which was mostly used for the concepts ‘named after’ and ‘genre’.</li>
                          <li>BIBFRAME: is employed to describe bibliographic records on the web, using Linked Data techniques. This framework aims to be a transition for MARC 21, still supporting the robust data exchange which happened in the previous years.</li>
-                         <li>The Event Ontology: was extremely useful to further develop the concept “event”, inside our conceptual model through cognitive agents that classify time and space. It also follows a similar design and layout employed also by the Music Ontology and FOAF, two other ontologies used in this project.</li>
+                         <li>The Event Ontology: was extremely useful to further develop the concept “event”, inside our conceptual model through cognitive agents that classify relationships between events. It also follows a similar design and layout employed also by the Music Ontology and FOAF, two other ontologies used in this project.</li>
+                         <li>Time ontology: was adopted to describe temporal concepts related to our events.</li>
+                         <li>SKOS: the Simple Knowledge Organization System, was adopted to formalize our concepts description and relations. </li>
+                         <li>Dbpedia Ontology: was employed in particular to describe our “Apollo 11 space mission” event, since it provided us with the specific class "dbo:SpaceMission" and related predicates. </li>
                     </ol>
                     <p style="font-size: 16px">Inside of the project, XSD has also been used to further explain the data types used.</p><br>
                     <div style="text-align:center">
@@ -837,7 +841,7 @@
                <!-- Data Description Section-->
                 <h2 class="page-section-heading text-center text-uppercase text-black mb-0" style="font-size:22px; font-family:SpaceFont">Data Description</h2><br>
                 <div>
-                    <p style="font-size: 16px">Using our conceptual model we extrapolated a series of RDF triples firstly about the moon landing itself, and then about each of our ten objects. Each row of the following tables represents a statement about each item, whilst the columns represent the subject, predicate, and object of each statement.</p>
+                    <p style="font-size: 16px">Using our conceptual model we extrapolated a series of RDF triples. firstly, we chose to describe the "Apollo 11 mission" event as example of our events description, and then we created RDF triples about each of our ten objects. Each row of the following tables represents a statement about each item, whilst the columns represent the subject, predicate, and object of each statement.</p>
                     <p style="font-size: 16px">Both subject and objects are written in natural language, whereas the predicates are expressed through the ontologies found in the previous step.</p>
                     <p style="font-size: 16px">These tables can be downloaded as CSV files via the following links: <a href="MoonLandingCSVFile.csv" download>Moon Landing Event</a> || <a href="FirstOnMoonBookCSVFile.csv" download>"First on the Moon"</a> || <a href="SpacesuitCSVFile.csv" download>Spacesuit</a> || <a href="NeverWentToMoonCSVFile.csv" download>"We Never Went to the Moon"</a> || <a href="MemorandumCSVFile.csv" download>Memorandum</a> || <a href="ManontheMoonSongCSVFile.csv" download>"Man on the Moon"</a> || <a href="SpecialMessageCSVFile.csv" download>Message to Congress</a> || <a href="ImageCSVFile.csv" download>Image</a> || <a href="MedalCSVFile.csv" download>Medal</a> || <a href="WaterlooCSVFile.csv" download>"Waterloo"</a> || <a href="2001SpaceOdysseyCSVFile.csv" download>"2001: A Space Odyssey"</a></p>
                 </div><br>
@@ -845,9 +849,9 @@
                <div class="container bcontent">
                     <ul class="nav nav-tabs nav-justified mb-4" id="tabs" role="tablist">
                         <li class="nav-item" data-aos="zoom-in">
-            			    <a class="nav-link active show" data-bs-toggle="tab" href="#moonlanding">
+            			    <a class="nav-link active show" data-bs-toggle="tab" href="#apollomission">
                                 <i class="bi bi-moon-fill"></i>
-                                <p style="font-size:9pt">Moon landing</p>
+                                <p style="font-size:9pt">Apollo 11 mission</p>
                             </a>
                         </li>
                         <li class="nav-item" data-aos="zoom-in">
@@ -914,8 +918,8 @@
              
                       
               <div class="tab-content" data-aos="fade-up">
-                  <!--Moon landing event table -->
-                  <div class="tab-pane show active" class="justify-content-md-center" id="moonlanding" role="tabpanel">
+                  <!--Apollo 11 mission event table -->
+                  <div class="tab-pane show active" class="justify-content-md-center" id="apollomission" role="tabpanel">
 				   	    <table class="table" style="background-color:#FFFFFF; font-size:14px">
 						    <thead>
 							    <tr>

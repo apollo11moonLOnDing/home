@@ -809,6 +809,7 @@
                      <p style="font-size: 16px">The main ontologies used for this step were:</p>
                      <ol style="font-size:16px">
                          <li>CIDOC-CRM: one of the most frequent ontologies in the model, both due to the fact that it is the best choice when it comes to describing museum objects - and many of our items indeed belong to this category - and because it is useful for harmonising information from different domains.</li>
+                         <li>OAD: a specific ontology for archival description,its classes and properties were created to represent the archival resources as linked data. We used it to formalize our two speech items as oad:ArchivalResource.</li>
                          <li>FRBR: an IFLA standard that proposes the creation of bibliographic concepts according to the WEMI model, (Work, Expression, Manifestation, Item) schema, which was extremely useful to identify the relationships between the book “A Space Odyssey” and its movie adaptation, through the concept of “work” (frbr-.Work) and “expression” (frbr:Expression).</li>
                          <li>FABIO: a FRBR-aligned ontology, especially designed for the bibliographic domain, that integrates new entities of published or potentially publishable material, as well as new properties to extend the FRBR data model. Designed to have greater flexibility and interoperability, it facilitates the descriptions and connections of bibliographic items in our collection.</li>
                          <li>DC: used for more general entities and properties. For example, creators or the subject of an event.</li>
@@ -816,12 +817,11 @@
                          <li>PRO: was adopted to describe characterisation of the roles of agents in our scenario.</li>
                          <li>Schema: applied to all items which did not necessarily belong in the LAM domain (for example, the TV episode, “Waterloo”), thanks to its flexibility and large number of properties and entities. It was also adopted to describe persons that belongs to our scenario more as actors of events rather then as persons related to the creation and description of items.</li>
                          <li>The Music Ontology: used to describe the song, “Man on the Moon”, since it provides a model for publishing structured music-related data.</li>
-                         <li>The DBpedia ontology: an ontology manually created by its own audience, which was mostly used for the concepts ‘named after’ and ‘genre’.</li>
                          <li>BIBFRAME: is employed to describe bibliographic records on the web, using Linked Data techniques. This framework aims to be a transition for MARC 21, still supporting the robust data exchange which happened in the previous years.</li>
                          <li>The Event Ontology: was extremely useful to further develop the concept “event”, inside our conceptual model through cognitive agents that classify relationships between events. It also follows a similar design and layout employed also by the Music Ontology and FOAF, two other ontologies used in this project.</li>
                          <li>Time ontology: was adopted to describe temporal concepts related to our events.</li>
                          <li>SKOS: the Simple Knowledge Organization System, was adopted to formalize our concepts description and relations. </li>
-                         <li>Dbpedia Ontology: was employed in particular to describe our “Apollo 11 space mission” event, since it provided us with the specific class "dbo:SpaceMission" and related predicates. </li>
+                         <li>Dbpedia Ontology: was employed in particular to describe our “Apollo 11 space mission” event, since it provided us with the specific class "dbo:SpaceMission" and related predicates. I was also used used to formalize predicates such as ‘named after’ and ‘genre’. </li>
                     </ol>
                     <p style="font-size: 16px">Inside of the project, XSD has also been used to further explain the data types used.</p><br>
                     <div style="text-align:center">
@@ -1610,7 +1610,7 @@
                     <p style="font-size: 16px">As the focus of our RDF production, we chose to concentrate on the aspects of the Apollo 11 moon landing which would allow us to create the maximum number of interlinkages, both within the entities themselves and within the landscape of the Web more broadly.</p>
                     <p style="font-size: 16px">As such, we produced RDF triples using the following events/items/people:</p>
                     <ul style="font-size: 16px">
-                        <li>The event of the moon landing itself, as part of the larger Apollo 11 Programme, and the event of the space race</li>
+                        <li>The event of the Apollo 11 mission, as a broader event of the Apollo 11 moon landing itself, and the event of the Space Race</li>
                         <li>Neil Armstrong the individual, a core figure in the moon landing itself, and a contributor to several of our objects</li>
                         <li>The book and movie versions of “2001: A Space Odyssey” which allowed us to introduce and connect Arthur C. Clarke and Stanley Kubrick, creators of the book and movie respectively, but who also contributed to each other’s work</li>
                         <li>The “First on the Moon” book, which is linked to Neil Armstrong as a writer, and Arthur C. Clarke as a contributor (since he wrote the epilogue)</li>

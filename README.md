@@ -8,5 +8,5 @@
     <li>The political background which was the backdrop and impetus of the moon landing, namely the Cold War and the Space Race</li> 
     <li>The perduring doubts which surround the moon landing, manifest in the proliferation of conspiracy theories, despite physical evidence to the contrary</li>
 
-The website that presents the project can be explored <a href="https://apollo11moonlonding.github.io/home/dist/index.html#page-top">here<\a>. 
+The website that presents the project can be explored <a href="https://apollo11moonlonding.github.io/home/dist/index.html#page-top">here</a>. 
 

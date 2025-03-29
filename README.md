@@ -2,6 +2,8 @@
 
 <b><i><large>“That’s one small step for man, one giant leap for mankind”</large></i></b>
 
+The website that presents the project can be explored <a href="https://apollo11moonlonding.github.io/home/dist/index.html#page-top">here</a>.
+
 <p>Moon LOnDing is a Linked Open Data project which seeks to explore the organisation and representation of knowledge connected to the Apollo 11 moon landing, focusing on three core narratives:</p>
 <ul>
     <li>The historic and era-defining nature of the achievement, as evidenced in many references to the moon landing in popular culture throughout the decades</li> 
@@ -9,5 +11,4 @@
     <li>The perduring doubts which surround the moon landing, manifest in the proliferation of conspiracy theories, despite physical evidence to the contrary</li>
     
 
-<p>The website that presents the project can be explored <a href="https://apollo11moonlonding.github.io/home/dist/index.html#page-top">here</a>.</p> 
 

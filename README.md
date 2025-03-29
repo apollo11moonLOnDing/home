@@ -9,5 +9,5 @@
     <li>The perduring doubts which surround the moon landing, manifest in the proliferation of conspiracy theories, despite physical evidence to the contrary</li>
     
 
-The website that presents the project can be explored <a href="https://apollo11moonlonding.github.io/home/dist/index.html#page-top">here</a>. 
+<p>The website that presents the project can be explored <a href="https://apollo11moonlonding.github.io/home/dist/index.html#page-top">here</a>.</p> 
 
